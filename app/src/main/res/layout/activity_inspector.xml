@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InspectorActivity">
+
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/zxingview"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:background="#404040">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvInspTest"
+            android:background="#404040"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:fontFamily="monospace"
+            android:text="HELLO, INSPECTOR!" />
+
+    </ScrollView>
+
+</LinearLayout>
